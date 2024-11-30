@@ -1,0 +1,2 @@
+data_path: "~/annotation" # read data from this folder
+mode: "image" # only image "cloud_image" "cloud"

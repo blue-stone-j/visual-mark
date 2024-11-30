@@ -1,0 +1,18 @@
+<RCC>
+  <qresource prefix="/">
+    <file>Resources/icon/cut.png</file>
+    <file>Resources/icon/file-text-o.png</file>
+    <file>Resources/icon/folder-open.png</file>
+    <file>Resources/icon/fullscreen.png</file>
+    <file>Resources/icon/paste.png</file>
+    <file>Resources/icon/refresh.png</file>
+    <file>Resources/icon/remove.png</file>
+    <file>Resources/icon/reply.png</file>
+    <file>Resources/icon/rotate-left.png</file>
+    <file>Resources/icon/rotate-right.png</file>
+    <file>Resources/icon/save.png</file>
+    <file>Resources/icon/share.png</file>
+    <file>Resources/icon/img_icon.png</file>
+    <file>Resources/icon/cloud_icon.png</file>
+  </qresource>
+</RCC>
