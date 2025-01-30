@@ -1,0 +1,31 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-20.04
+
+    steps:
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Install dependencies
+      - name: Install Qt and tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y qt5-default cmake make g++  # Adjust based on your needs
+
+      # Build the project
+      - name: Build with CMake
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+          make
