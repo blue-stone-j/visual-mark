@@ -21,6 +21,8 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y qt5-default cmake make g++  # Adjust based on your needs
+          sudo apt-get install -y libqt5svg5-dev
+          sudo apt-get install -y libqt5x11extras5-dev
 
       # Build the project
       - name: Build with CMake
