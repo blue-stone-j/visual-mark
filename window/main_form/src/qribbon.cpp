@@ -1,5 +1,5 @@
-#include "QRibbon.h"
-#include "qribbon_ui.h"
+#include "../include/QRibbon.h"
+#include "../include/qribbon_ui.h"
 #include "QtGui/qevent.h"
 
 #include <QPropertyAnimation>
