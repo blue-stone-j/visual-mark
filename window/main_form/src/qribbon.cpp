@@ -1,4 +1,4 @@
-#include "../include/QRibbon.h"
+#include "../include/qribbon.h"
 #include "../include/qribbon_ui.h"
 #include "QtGui/qevent.h"
 

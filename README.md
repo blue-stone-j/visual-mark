@@ -6,5 +6,4 @@
 ![GitHub forks](https://img.shields.io/github/forks/blue-stone-j/visual-mark?style=flat-square)
 ![GitHub issues](https://img.shields.io/github/issues/blue-stone-j/visual-mark?style=flat-square)
 
-
-本项目基于Qt5, [ros_qt5_gui_app]((https://github.com/chengyangkj/Ros_Qt5_Gui_App)开发，基于CMake进行构建.
+This project is developed based on Qt5, [ros_qt5_gui_app](https://github.com/chengyangkj/Ros_Qt5_Gui_App), [QRibbon](https://github.com/gnibuoz/QRibbon) and is built with CMake.

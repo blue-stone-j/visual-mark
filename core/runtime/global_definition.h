@@ -5,7 +5,7 @@
 
 const std::string SYSTEM_VERSION="Linux";
 const std::string SOFTWARE_VERSION="Linux";
-const std::string RELEASE_DATE="30.11.24";
+const std::string RELEASE_DATE="02.02.25";
 
 #if defined(_WIN32) || defined(_WIN64)
 #include <windows.h>
