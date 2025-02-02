@@ -14,7 +14,7 @@ jobs:
     steps:
       # Checkout the repository
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # Install dependencies
       - name: Install Qt and tools
@@ -33,7 +33,7 @@ jobs:
           make
       # Upload the executable as an artifact
       - name: Upload executable as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: visual-mark  # Name the artifact (this will appear in GitHub's artifact list)
           path: build/visual_mark  # Path to the executable (adjust this path if your executable is elsewhere)
