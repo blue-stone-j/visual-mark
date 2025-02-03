@@ -27,10 +27,7 @@ jobs:
       # Build the project
       - name: Build with CMake
         run: |
-          mkdir build
-          cd build
-          cmake ..
-          make
+          ./make.sh
       # Upload the executable as an artifact
       - name: Upload executable as artifact
         uses: actions/upload-artifact@v4
