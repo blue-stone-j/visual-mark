@@ -39,6 +39,7 @@ jobs:
       - name: Upload Release
         uses: ncipollo/release-action@v1
         with:
+          tag: 'v1.0.0'  # Use a static version (can be changed with each release)
           artifacts: 'build/visual_mark'
           token: ${{ secrets.GITHUB_TOKEN }}
 
