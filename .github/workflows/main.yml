@@ -35,3 +35,10 @@ jobs:
         with:
           name: visual-mark  # Name the artifact (this will appear in GitHub's artifact list)
           path: build/visual_mark  # Path to the executable (adjust this path if your executable is elsewhere)
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: build/visual_mark  # Path to the executable
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
