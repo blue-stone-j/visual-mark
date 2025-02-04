@@ -36,16 +36,22 @@ jobs:
           name: visual-mark  # Name the artifact (this will appear in GitHub's artifact list)
           path: build/visual_mark  # Path to the executable (adjust this path if your executable is elsewhere)
 
-      - name: Create a Git tag (if needed)
-        run: |
-          # Create a tag based on the current date or commit SHA
-          TAG_NAME="v$(date +'%Y.%m.%d')"
-          git tag $TAG_NAME
-          git push origin $TAG_NAME  # Push the tag to the remote repository
-
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
+      - name: Upload Release
+        uses: ncipollo/release-action@v1
         with:
-          files: build/visual_mark  # Path to the executable
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          artifacts: 'build/visual_mark'
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # - name: Create a Git tag (if needed)
+      #   run: |
+      #     # Create a tag based on the current date or commit SHA
+      #     TAG_NAME="v$(date +'%Y.%m.%d')"
+      #     git tag $TAG_NAME
+      #     git push origin $TAG_NAME  # Push the tag to the remote repository
+
+      # - name: Create GitHub Release
+      #   uses: softprops/action-gh-release@v1
+      #   with:
+      #     files: build/visual_mark  # Path to the executable
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
